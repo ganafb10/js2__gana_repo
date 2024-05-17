@@ -11,28 +11,25 @@ function generateSinglePost1Html(post){
         return null;
     }
 
-    const postImageContainer = document.createElement('div');
+    const postImageContainer= document.createElement('div');
     const postContainer = document.createElement('div');
-
-    const postTitle = document.createElement('h3');
-    postTitle.textContent = post?.title;
+    postContainer.className = 'card  shadow-sm'
+    
+    
+    const postTitle = document.createElement('h5');
+    postTitle.textContent=post.title; 
+    postTitle.className= 'card-title'
 
     const postBody = document.createElement('p');
-    postBody.textContent = post?.body; // Use an empty string if body is null
+    postBody.textContent=post.body;
+    postBody.className ='card-text'
 
-    const postReactions = document.createElement('p');
-    postReactions.textContent = `Reactions: ${post?._count?.reactions}`;
-
-    const postComments = document.createElement('p');
-    postComments.textContent = `Comments: ${post?._count?.comments}`;
-
-    // Check and handle null or undefined values for media
     let postImageUrl = (!!post?.media && post?.media!=='')? post.media: defaultProfileImage;
     const postImage = document.createElement('img');
     postImage.src = postImageUrl;
+    postImage.className='card-img-top'
     postImageContainer.append(postImage);
-
-    postContainer.append(postImageContainer, postTitle, postReactions, postComments);
+    postContainer.append(postImageContainer, postTitle, postBody);
 
     return postContainer;
 }
