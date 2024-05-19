@@ -11,11 +11,7 @@ export async function doFetch(url, isAuth = false, options = {}){
         };
 
         const combinedOptions ={headers, ...options};
-        console.log(combinedOptions)
-        
-        // if isAuth is true, 
-        //add auth token to header
-
+        console.log(combinedOptions);
         const response = await fetch(url, combinedOptions);
         const data = await response.json();
         return data;

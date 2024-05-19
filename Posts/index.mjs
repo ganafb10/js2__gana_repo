@@ -7,6 +7,18 @@ import { doFetch } from "../utils/doFetch.mjs";
 
 const defaultProfileImage ="https://images.unsplash.com/photo-1516466723877-e4ec1d736c8a"
 
+
+/**
+ * Generates HTML for a single post.
+ *
+ * @param {Object} post - The post object.
+ * @param {number} post.id - The ID of the post.
+ * @param {string} post.title - The title of the post.
+ * @param {string} post.body - The body content of the post.
+ * @param {string} [post.media] - The URL of the post's media image.
+ * @returns {HTMLElement} The HTML element representing the post.
+ */
+
 const generateSinglePostHtml=(post)=>{
     const postImageContainer= document.createElement('div');
     const postContainer = document.createElement('div');
@@ -38,29 +50,6 @@ const generateSinglePostHtml=(post)=>{
 
     return postContainer
 };
-
-/*const ShowReactions= false;
-posts.filter((post)=>{
-    if (ShowReactions){
-        if(post._count.reactions>0){
-            return true;
-        }
-    }else{
-        return true
-    }
-})*/
-
-
-
-/*function filterPostsByTitle(posts, keyword) {
-    return posts.filter(post => post.title.toLowerCase().includes(keyword.toLowerCase()));
-  }
-  document.getElementById('filterInput').addEventListener('input', function(event) {
-    const keyword = event.target.value;
-    const filteredPosts = filterPostsByTitle(posts, keyword);
-    displayPosts(filteredPosts);
-  });*/
-  
 
 function displayPosts(posts){
     const postsDisplayContainer= document.querySelector('#posts-display-container');
