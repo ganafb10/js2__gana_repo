@@ -1,0 +1,26 @@
+.container1{
+    width: 500px;
+    border: 3px solid rgb(37, 150, 190);
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 18px;
+    background-color: rgb(37, 150, 190);
+}
+.btn {
+    width: 100%;
+    background-color:#d6d37a ;
+}
+
+.wrapper{
+    background-color:rgb(60, 75, 80);
+    margin: 0 auto;
+}
+
+h1{
+    color: #d6d37a;
+}
+
+img {
+    width: 18rem;
+  }
+  
