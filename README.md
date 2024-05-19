@@ -29,7 +29,8 @@ We begin by creating a repository  https://github.com/ganafb10/js2__gana_repo  a
 **Login:** use the above Sign-up information to login and interact with posts.<br>
 **Search:** Use the search bar to find posts by titles.<br>
 
-**site**<br>
+**site:**<br>
+https://js2g.netlify.app<br>
 
-https://js2g.netlify.app
-
+**pull requests link:**<br>
+https://github.com/ganafb10/js2__gana_repo/pull/1
