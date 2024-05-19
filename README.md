@@ -27,5 +27,9 @@ We begin by creating a repository  https://github.com/ganafb10/js2__gana_repo  a
 **Usage**  <br>
 **Sign up:** create an account by providing Full Name, Username, Email address and password.<br>
 **Login:** use the above Sign-up information to login and interact with posts.<br>
-**Search:** Use the search bar to find posts by titles.
+**Search:** Use the search bar to find posts by titles.<br>
+
+**site**<br>
+
+https://js2g.netlify.app
 
